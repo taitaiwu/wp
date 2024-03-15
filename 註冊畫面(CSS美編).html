@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8">
+        <title>註冊畫面</title>
+    </header>
+
+    <style>
+        *{margin: 0%;}
+        body
+        {
+            border: 3px solid rgb(0, 0, 0);
+        }
+
+        header 
+        {
+            clear: both; 
+            font-family: 標楷體;
+            font-size: 30px; 
+            line-height: 100px;
+            text-align: center; 
+            text-shadow: 12px 5px 5px gray;
+            padding: 0.2cm;
+            content: 0%;
+            margin: 0%;
+            border: 0px;
+            height: 10%;
+            background-color: rgb(198, 246, 251, 30%);
+            color: rgb(0, 0, 0);
+        }
+
+        form
+        {
+            text-indent: 37%;
+            line-height: 40px;
+            padding: 0cm;
+            height: 90%;
+            background: radial-gradient(circle, white, lightgreen);
+            color: rgb(0, 0, 0); 
+        }
+
+        ul.list 
+        {
+            list-style-type: square;
+            list-style-position: inside;
+        }
+
+        input:focus {background-color: rgb(204, 235, 142);}
+
+        button
+        {
+            text-align: center;
+            size: 40px;
+        }
+
+        a:link {color: black;}
+        a:visited {color: blue;}
+    </style>
+
+    <body>
+        <header><h1><b>註冊畫面</b></h1></header>
+        
+        <form>
+            <hr color="black" 3px>
+            <ul class="list">
+                <p>
+                    <li>
+                        姓名 &nbsp : &nbsp&nbsp 
+                        <input type="text" >
+                    </li>
+                </p>
+
+                <p>
+                    <li>
+                        帳號 &nbsp : &nbsp&nbsp
+                        <input type="text" >
+                    </li>
+                </p>
+
+                <p>
+                    <li>
+                        密碼 &nbsp : &nbsp&nbsp
+                        <input type="password" >
+                    </li>
+                </p>
+                
+                <p>
+                    <li>
+                        信箱 &nbsp : &nbsp&nbsp
+                        <input type="email" placeholder="abc12@gmail.com" pattern="">
+                    </li>
+                </p>
+
+                <p>
+                    <li>
+                        性別 &nbsp : &nbsp&nbsp
+                        <input type="radio" value="man">
+                        <label for="man">男</label>
+                        <input type="radio" value="woman">
+                        <label for="woman">女</label>
+                        <input type="radio" value="other">
+                        <label for="other">其他</label>
+                    </li>
+                </p>
+
+                <p>
+                    <li>
+                        生日 &nbsp : &nbsp&nbsp  
+                        <input type="date">
+                    </li>
+                </p>
+
+                <p>
+                    <li>
+                        喜歡的顏色 &nbsp : &nbsp&nbsp  
+                        <input type="color">
+                    </li>
+                </p>
+                <p>
+                    <li>
+                        血型 &nbsp : &nbsp&nbsp
+                        <select>
+                            <option>A型</option>
+                            <option>B型</option>
+                            <option>O型</option>
+                            <option>AB型</option>
+                        </select>
+                    </li>
+                </p>
+
+                <p>
+                    <li>
+                        電話 &nbsp : &nbsp&nbsp
+                        <input type="tel" placeholder="0912-345-678" pattern="">
+                    </li>
+                </p>
+                <p>
+                    <li>
+                        訂閱 &nbsp : &nbsp&nbsp
+                        <input type="checkbox">
+                        透過E-mail接收最新資訊
+                    </li>
+                </p>
+
+                <p>
+                    <li>
+                        附件 &nbsp : &nbsp&nbsp
+                        <input type="file">
+                    </li>
+                </p>
+
+                <p>
+                    <li>
+                        自我介紹 &nbsp : &nbsp&nbsp<br>
+                    </li>
+                </p>
+
+                <p>
+                    <textarea cols="35" rows="5" placeholder="這個人很懶，什麼都沒留下"></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">提交</button>
+                    <button type="reset">重新輸入</button>
+                    <button type="menu">功能表</button>
+                    <button><a href="湯姆貓與傑利鼠(網頁設計練習demo).html">回前頁</a></button>
+                </p>
+            </ul>
+        </form>
+    </body>
+</html>
