@@ -11,4 +11,4 @@ function arrayMin(a)
 }
 
 arrayMin([1,2,3,4,5]);
-arrayMin([25,14,63,47,95]);
+arrayMin([25,14,63,47,99]);

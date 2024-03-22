@@ -3,8 +3,9 @@ var num = { Sunday:"0" , Monday:"1" , Tuesday:"2" , Wednesday:"3" , Thursday:"4"
 function weekday (str)
 {
     var n=[];
+    let i;
 
-    for (let i in str)
+    for (i in str)
     {
         var str_word=str[i];
         var num_word=num[str_word];
