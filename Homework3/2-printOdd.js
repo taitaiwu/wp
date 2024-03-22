@@ -6,4 +6,4 @@ function printOdd(n)
         if (i%2!=0) console.log(i);
     }
 }
-printOdd(12);
+printOdd(10);
