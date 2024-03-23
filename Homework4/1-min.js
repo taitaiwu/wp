@@ -6,5 +6,5 @@ function min(a,b)
 }
 
 min(10,20);
-min(64,25);
+min(64,21);
 min(50,50);

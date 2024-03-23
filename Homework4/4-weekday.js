@@ -13,6 +13,7 @@ function weekday (str)
     }
     return n;
 }
+
 console.log("weekday:", Deno.args);
 var n=weekday(Deno.args);
 console.log("transformed:",n);

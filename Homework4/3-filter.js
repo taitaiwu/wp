@@ -1,17 +1,14 @@
 function filter (a,f)
 {
-    let i=1,m;
+    var result=[];
+    let i;
 
-    for (i=0 ; i<a.lengh ; i++)
+    for (i=0 ; i<a.length ; i++)
     {
-        m=f(a[i]);
-        if (m==1) console.log(a[i]);
+        if (f(a[i])) result.push(a[i]);
     }
+
+    console.log (result);
 }
 
-function f(x)
-{
-    return (x%2)
-}
-
-filter([1,2,3,4,5,6,7,8,9,10]);
+filter([1,2,3,4,5,6,7,8,99], function (x) { return x%2 == 1 ; });
