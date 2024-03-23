@@ -11,4 +11,4 @@ function filter (a,f)
     console.log (result);
 }
 
-filter([1,2,3,4,5,6,7,8,99], function (x) { return x%2 == 1 ; });
+filter([1,2,3,4,5,6,7,8,97,102], function (x) { return x%2 == 1 ; });

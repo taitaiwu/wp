@@ -14,6 +14,6 @@ function weekday (str)
     return n;
 }
 
-console.log("weekday:", Deno.args);
+console.log("Weekday:", Deno.args);
 var n=weekday(Deno.args);
-console.log("transformed:",n);
+console.log("Transformed:",n);
