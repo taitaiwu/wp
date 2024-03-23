@@ -2,14 +2,14 @@ var counter={};
 
 function countChar(str)
 {
-    let i,j;
+    let i;
 
-    for (i=0 ; i<str.lengh ; i++)
+    for (i=0 ; i<str.length ; i++)
     {
-        for (j=0 ; j<i ; j++)
-        {
-            if (str[i]!=str[j])
-        }
-
+        if (counter[str[i]]) counter[str[i]]+=1;
+        else counter[str[i]]=1;
     }
+    console.log (counter);
 }
+
+countChar("aabccadefaac");
