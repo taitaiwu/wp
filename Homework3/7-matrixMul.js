@@ -1,16 +1,16 @@
-function matrixAdd(a,b)
+function matrixMul(a,b)
 {
-    var sum=[];
+    var sum=[0];
     let i,j;
 
-    for (i=0 ; i<a.length || i<b.length ; i++)
+    for (i=0 ; i<a[i].length ; i++)
     {
-        sum[i]=[];
-        for (j=0 ; j<a[i].length || j<b[i].length ; j++)
+        let j;
+        for (j=0 ; j<b[j].length ; j++)
         {
-            sum[i][j]=a[i][j]*b[i][j];
+            sum[i][j]+=a[i][j]*b[j][i];
         }
     }
     console.log(sum);
 }
-matrixAdd([[1,2,3,4,5],[6,7,8,9,10]],[[11,12,13,14,15],[16,17,18,19,20]]);
+matrixMul([[1,2],[6,7]],[[11,12],[16,17]]);
