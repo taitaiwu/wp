@@ -2,6 +2,57 @@
     <body>
         <button onclick="job()">button3</button>
 
-        function job
+        <script>
+            function job()
+            {
+                setTimeout(job,300);
+
+                let num = getRandomInt(1,4);
+                let move = getRandomInt(1,200);
+                
+                if ((num==1 && left>0) || (num==2 && (left+b.offsetWidth)>=window.innerWidth)) left-=move;
+                else if ((num==1 && left<=0) || (num==2 && (left+b.offsetWidth)<window.innerWidth)) left+=move;
+
+                if ((num==3 && top1>0) || (num==4 && (top1+b.offsetHeight)>=window.innerHeight)) top1-=move;
+                else if ((num==3 && top1<=0) ||(num==4 && (top1+b.offsetHeight)<window.innerHeight)) top1+=move;
+                            
+                b.style.left = left;
+                b.style.top = top1;
+                
+                let color = getRandomInt(1,10);
+
+                if (color==1) b.style.backgroundColor='Red';
+                else if (color==2) b.style.backgroundColor='Orange';
+                else if (color==3) b.style.backgroundColor='Yellow';
+                else if (color==4) b.style.backgroundColor='Green';
+                else if (color==5) b.style.backgroundColor='Blue';
+                else if (color==6) b.style.backgroundColor='Indigo';
+                else if (color==7) b.style.backgroundColor='Purple';
+                else if (color==8) b.style.backgroundColor='Black';
+                else if (color==9) b.style.backgroundColor='White';
+
+                if (color>0 && color<9 && color!=3) b.style.color='White';
+                else if (color==3 || color==9) b.style.color='Black';
+            }
+
+            function getRandomInt(min, max) 
+            {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+
+            let left=100;
+            let top1=100;
+            let width=100;
+            let height=70;
+            let position='absolute';
+            let b=document.querySelector("button");
+            b.style= `position:${position}; left:${left};  top:${top1}; width:${width}; height:${height}`
+            b.style.backgroundColor="White";
+            b.style.color="Black";
+            b.style.fontSize="25px";
+        </script>
     </body>
 </html>
