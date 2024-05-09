@@ -6,6 +6,56 @@
     </head>
 
     <body>
-        <header>標題好難想</header>
+        <canvas id="mycanvas1" width="1000" height="200" ></canvas>
+        <br>
+        <canvas id="mycanvas2" width="800" height="700" style="border: 1px solid #000000;"></canvas>
+
     </body>
+
+    <script> //title
+        const canvas1 = document.getElementById("mycanvas1");
+        const ctx1 = canvas1.getContext("2d");
+
+        const grad1 = ctx1.createLinearGradient(0,0,250,0);
+        grad1.addColorStop(0,"lightblue");
+        grad1.addColorStop(1,"darkblue");
+
+        ctx1.font = "100px Comic Sans MS";
+        ctx1.fillStyle = grad1;
+        ctx1.fillText("Mickey Mouse",50,100);
+    </script>
+
+    <script>  //picture
+        const canvas2 =document.getElementById("mycanvas2");
+        const ctx2 = canvas2.getContext("2d")
+
+        //left ear
+        ctx2.beginPath();
+        ctx2.arc(150, 140, 120, 0, 2 * Math.PI);
+
+        ctx2.fillStyle = "Black";
+        ctx2.fill();
+        ctx2.lineWidth = 2;
+        ctx2.strokeStyle = "Black"
+        ctx2.stroke();
+
+        //right ear
+        ctx2.beginPath();
+        ctx2.arc(650, 140, 120, 0, 2 * Math.PI);
+        
+        ctx2.fillStyle = "Black";
+        ctx2.fill();
+        ctx2.lineWidth = 2;
+        ctx2.strokeStyle = "Black"
+        ctx2.stroke();
+
+        //face
+        ctx2.beginPath();
+        ctx2.arc(400, 420, 256, 0, 2 * Math.PI);
+        ctx2.fillStyle = "Black";
+        ctx2.fill();
+        ctx2.stroke();
+    </script>
+
+
 </html>
