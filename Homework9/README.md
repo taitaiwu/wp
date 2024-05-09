@@ -11,4 +11,4 @@
 
 * [W3Schools - HTML Canvas Circles](https://www.w3schools.com/graphics/canvas_circles.asp)
 * [W3Schools - HTML Canvas Text Color](https://www.w3schools.com/graphics/canvas_text_color.asp)
-* [![](https://lh6.googleusercontent.com/proxy/gysRNhLUTTqOwy9zeBiop1OZm4uMS56v7XI9SxWExPXQ8YVRZoU5EoCBHF6oPqo_SgoYjWFrpJkEnm2krAE_UtumyDp_aWglLkdXzSiJg4mpfw8FcOgG4bKUWHtTadhF)](https://buzzorange.com/techorange/2016/10/20/7-greatest-logo/ "前往圖片來源網站")1
+* [![](https://lh6.googleusercontent.com/proxy/gysRNhLUTTqOwy9zeBiop1OZm4uMS56v7XI9SxWExPXQ8YVRZoU5EoCBHF6oPqo_SgoYjWFrpJkEnm2krAE_UtumyDp_aWglLkdXzSiJg4mpfw8FcOgG4bKUWHtTadhF)](https://buzzorange.com/techorange/2016/10/20/7-greatest-logo/ "前往圖片來源網站")
