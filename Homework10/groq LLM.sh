@@ -1,0 +1,1 @@
+GROQ_API_KEY=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 deno run -A groqChat.js 請問 GPT 是什麼？用中文回答
