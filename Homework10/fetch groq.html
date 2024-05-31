@@ -1,7 +1,8 @@
 <html>
     <body>
         
-        
+        <textarea cols="35" rows="5"></textarea>
+
         <script>
         let key = "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"
 
@@ -21,16 +22,19 @@
                 }
             })
             const jsonData = await jsonResponse.json()
-            console.log(JSON.stringify(jsonData, null, 2))
+            const assistant_message = jsonData.choices[0].message.content
 
-            document.getElementById('answer').innerText = JSON.stringify(jsonData, null, 2)
+            console.log(assistant_message)
+
+            document.getElementById('answer').innerText = assistant_message
 
             return jsonData
         }
 
-        chat("GPT 是甚麼? 請用中文回答")
-
+        chat("hello 請用中文回答")
+        
         </script>
+
 
         <div id="answer"> </div>
     </body>
