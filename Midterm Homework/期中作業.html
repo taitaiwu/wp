@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+        <title>我想一下</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light navbar-expand-md" style="background-color: #ecfdfb;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://www.nqu.edu.tw/var/file/0/1000/img/5/logo.png" width="30px" class="d-inline-block align-text-top">
+                    我的旅遊日記 at金門
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="#navbar1">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#">首頁</a></li>
+                        <li class="nav-item"><a class="nav-link">金寧鄉</a></li>
+                        <li class="nav-item"><a class="nav-link">金城鎮</a></li>
+                        <li class="nav-item"><a class="nav-link">金沙鎮</a></li>
+                        <li class="nav-item"><a class="nav-link">金湖鎮</a></li>
+                        <li class="nav-item"><a class="nav-link">列嶼鄉(小金門)</a></li>
+                    </ul>
+
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="輸入景點">
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                     </form>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                </ol>
+    
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://kinmen.travel/attractions/32464/1024x768_attractions-image-d0usbho7hkylmyruhmpgiq.jpg" class="d-block w-100" alt="金門大橋">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>金門大橋</h5>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <img src="https://storage.googleapis.com/www-cheers-com-tw/article/202102/article-602f8c0f16d11.jpg" class="d-block w-100" alt="金門大學">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>金門大學</h5>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <img src="https://image.gdg.asia/a/22/249/2224917121393605557876.jpg" class="d-block w-100" alt="金門縣中心圖書館及美術館">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>金門縣中心圖書館及美術館(假的)</h5>
+                        </div>
+                    </div>
+                </div>
+    
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+    
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </main>
+    </body>
+</html>
