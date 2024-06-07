@@ -1,41 +1,54 @@
 <html>
+    <head>
+        <meta charset="utf-8">
+        <title>基於Groq大語言模型的對話</title>
+    </head>
     <body>
+        <header>
+            <h1 style="text-align: center;">大語言模型 👁️</h1>
+        </header>
         
-        <textarea cols="35" rows="5"></textarea>
+        <main>
+                <textarea id="question" cols="200" rows="5"></textarea>
+                <button onclick="chat()">送出問題</button>
+                <div id="response" placeholder="輸出文章"></div>
 
-        <script>
-        let key = "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"
-
-
-        async function chat(q) {
-            const jsonResponse = await fetch("https://api.groq.com/openai/v1/chat/completions", 
-            {
-                body: JSON.stringify({
-                    "model": "llama3-8b-8192",
-                    "messages": [{"role": "user", "content": q}],
-                    "temperature": 0.7
-                }),
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${key}`,
-                }
-            })
-            const jsonData = await jsonResponse.json()
-            const assistant_message = jsonData.choices[0].message.content
-
-            console.log(assistant_message)
-
-            document.getElementById('answer').innerText = assistant_message
-
-            return jsonData
-        }
-
-        chat("hello 請用中文回答")
-        
-        </script>
+                <script>
+                    let key = "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"
 
 
-        <div id="answer"> </div>
+                    async function groqChat(q) 
+                    {
+                        const jsonResponse = await fetch("https://api.groq.com/openai/v1/chat/completions", 
+                        {
+                            body: JSON.stringify({
+                                "model": "llama3-8b-8192",
+                                "messages": [{"role": "user", "content": q}],
+                                "temperature": 0.7
+                            }),
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'Authorization': `Bearer ${key}`,
+                            }
+                        })
+                        const jsonData = await jsonResponse.json()
+                        console.log(JSON.stringify(jsonData, null, 2))
+                        return jsonData.choices[0].message.content
+                    }
+
+                    async function chat() 
+                    {
+                        let qNode = document.querySelector('#question')
+                        let responseNode = document.querySelector('#response')
+                        responseNode.innerText = '請稍等幾秒鐘 ...'
+                        let answer = await groqChat(qNode.value)
+                        responseNode.innerText = answer
+                    }
+                
+                </script>
+
+                <div id="answer"> </div>
+        </main>
     </body>
 </html>
