@@ -12,20 +12,24 @@
 
 ---
 
-## 期中作業
+## 關於期中作業
 
-
+參考資料 :  
+> *  設計師一定要學的 Bootstrap 5 RWD 響應式網頁設計 : 行動優先的前端技術 (陳惠貞著 旗標科技)
 ---
 
 ## 關於期末作業
 
-1. 作業1 : 修改Bing Copilot之自我介紹網頁模板
-2. 作業2 : 原創
-3. 作業3 : 原創
-4. 作業4 : 第八題參考解答，其他原創
-5. 作業5 : 原創 (使用Bing Copilot提供之getRandomInt函數、offsetWidth、offsetHeight)
-6. 作業6 : 原創
-7. 作業7 : 原創(參考Bing Conpilot之oninput事件以及課程教材)
-8. 作業8 : 修改W3School之layout教材程式碼，圖片為Bing Copilot生成
-9. 作業9 : 原創
-10. 作業10 : 修改老師程式碼
+作業2、3、5、6、7、9為原創；作業4部分原創  
+
+**作業詳情**
+1. [作業1](https://github.com/taitaiwu/wp/tree/master/homework1) : 修改Bing Copilot之自我介紹網頁模板
+2. [作業2](https://github.com/taitaiwu/wp/tree/master/homework2) : 原創
+3. [作業3](https://github.com/taitaiwu/wp/tree/master/Homework3)  : 原創
+4. [作業4](https://github.com/taitaiwu/wp/tree/master/Homework4)  : 第八題參考解答，其他原創
+5. [作業5](https://github.com/taitaiwu/wp/tree/master/Homework5)  : 原創 (使用Bing Copilot提供之getRandomInt函數、offsetWidth、offsetHeight)
+6. [作業6](https://github.com/taitaiwu/wp/tree/master/Homework6)  : 原創
+7. [作業7](https://github.com/taitaiwu/wp/tree/master/Homework7)  : 原創(參考Bing Conpilot之oninput事件以及課程教材)
+8. [作業8](https://github.com/taitaiwu/wp/tree/master/Homework8)  : 修改W3School之layout教材程式碼，圖片為Bing Copilot生成
+9. [作業9](https://github.com/taitaiwu/wp/tree/master/Homework9)  : 原創
+10. [作業10](https://github.com/taitaiwu/wp/tree/master/Homework10)  : 修改老師程式碼
