@@ -9,7 +9,7 @@ function matrixMul(a,b)
         {
             for (k = 0; k < a[0].length; k++) 
             {
-                sum[i][j] = a[i][k] * b[k][j];
+                sum[i][j] += a[i][k] * b[k][j];
             }
         }
     }
