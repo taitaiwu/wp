@@ -15,3 +15,10 @@
 * 7-lcm.js
 * 8-gradient.js
 2. 作業使用Javascript獨立完成
+3. 第三題與第五題使用Copilot來debug；第八題參考解答
+
+---
+
+## 參考資料及教材
+
+* [gradient.js](https://github.com/ccc112b/html2denojs/blob/master/01-%E5%89%8D%E7%AB%AF/03-js/04-function/gradient.js)
