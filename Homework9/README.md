@@ -5,7 +5,7 @@
 ## 關於作業
 
 * 此作業包括一個名為**website with drawing**之檔案
-* 作業獨立完成，有使用Copilot來對程式碼除錯(mycanvas1的script部分)
+* 作業使用html以及Javascript獨立完成，有使用Copilot來對程式碼除錯(mycanvas1的script部分)
 
 ## 參考資料及教材
 
