@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+        <title>投稿專區</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light navbar-expand-md" style="background-color: #ecfdfb;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="投稿專區.html">金門貓咪地圖 投稿專區</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item active"><a class="nav-link" href="期中作業.html">首頁</a></li>
+                        <li class="nav-item"><a class="nav-link" href="金寧鄉.html">金寧鄉</a></li>
+                        <li class="nav-item"><a class="nav-link" href="金城鎮.html">金城鎮</a></li>
+                        <li class="nav-item"><a class="nav-link" href="金沙鎮.html">金沙鎮</a></li>
+                        <li class="nav-item"><a class="nav-link" href="金湖鎮.html">金湖鎮</a></li>
+                        <li class="nav-item"><a class="nav-link" href="列嶼鄉.html">列嶼鄉(小金門)</a></li>
+                    </ul>
+                    
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="輸入景點">
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                     </form>
+                </div>
+            </div>
+        </nav>
+
+        <br><br>
+
+        <main>
+            <div class="container">
+                <form>
+                    <div class="mb-3 row">
+                        <label for="userName" class="col-sm-2 col-form-label">&nbsp;投稿人暱稱</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="顯示於圖片來源處" id="userName">
+                        </div>
+                    </div>
+        
+                    <div class="mb-3 row">
+                        <label for="userEmail" class="col-sm-2 col-form-label">&nbsp;投稿人E-mail</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" placeholder="123@gmail.com" id="userEmail">
+                            <div id="emailHelp" class="form-text">電子郵件作為回覆結果用，我們不會洩漏你的個資</div>
+                        </div>
+                    </div>
+        
+                    <div class="mb-3 row">
+                        <label for="where" class="col-sm-2 col-form-label">&nbsp;請選擇貓咪出沒地區</label>
+                        <div class="col-sm-10">
+                            <select class="form-select" id="where">
+                                <option value="1" selected>金寧鄉</option>
+                                <option value="2">金城鎮</option>
+                                <option value="3">金沙鎮</option>
+                                <option value="4">金湖鎮</option>
+                                <option value="5">列嶼鄉(小金門)</option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <div class="mb-3 row">
+                        <label for="point" class="col-sm-2 col-form-label">&nbsp;請輸入貓咪出沒地點</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="如:金門大學園樓" id="point">
+                            <div class="form-text">請輸入大致地點</div>
+                        </div>
+                    </div>
+        
+                    <div class="mb-3 row">
+                        <label for="kind" class="col-sm-2 col-form-label">&nbsp;請輸入貓咪品種</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="若不知道請輸入&ldquo;未知&rdquo;" id="kind">
+                        </div>
+                    </div>
+        
+                    <div class="mb-3 row">
+                        <label for="name" class="col-sm-2 col-form-label">&nbsp;請輸入貓咪暱稱</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="若不知道請輸入&ldquo;未知&rdquo;" id="name">
+                        </div>
+                    </div>
+        
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">&nbsp;請選擇貓咪親人程度</label><br>
+                        <div class="col-sm-10">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" value="R1" id="R1" checked>
+                                <label for="R1" class="form-check-label">幾乎任何時候給摸</label>
+                            </div>
+        
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" value="R2" id="R2">
+                                <label for="R2" class="form-check-label">一般時候給摸，但偶爾咬人</label>
+                            </div>
+        
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" value="R3" id="R3">
+                                <label for="R3" class="form-check-label">靠近時會攻擊</label>
+                            </div>
+        
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" value="R4" id="R4">
+                                <label for="R4" class="form-check-label">看見人就跑</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 row">
+                        <label for="photo" class="col-sm-2 col-form-label">&nbsp;請上傳貓咪照片</label>
+                        <div class="col-sm-10">
+                            <input type="file" class="form-control" accept=".png , .jpg , .jpeg , .bmp" multiple id="photo">
+                        </div>
+                    </div>
+
+                    <div class="mb-3 row">
+                        <label for="info" class="col-sm-2 col-form-label">&nbsp;貓咪的介紹</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" rows="5" id="info" placeholder="介紹貓咪的資訊"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary">提交送出</button>
+                    <button type="reset" class="btn-primary">清空重填</button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
