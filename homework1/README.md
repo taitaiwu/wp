@@ -6,4 +6,4 @@
 ## 關於作業
 
 * 此作業包括一個名為**自我介紹.html**之檔案
-* 使用 Bing Copilot 生成模板再修改內容
+* 使用 Bing Copilot 生成html模板再修改內容
