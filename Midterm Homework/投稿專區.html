@@ -96,22 +96,22 @@
                         <label class="col-sm-2 col-form-label">&nbsp;請選擇貓咪親人程度</label><br>
                         <div class="col-sm-10">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" value="R1" id="R1" checked>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" value="R1" id="R1" checked>
                                 <label for="R1" class="form-check-label">幾乎任何時候給摸</label>
                             </div>
     
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" value="R2" id="R2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" value="R2" id="R2">
                                 <label for="R2" class="form-check-label">一般時候給摸，但偶爾咬人</label>
                             </div>
     
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" value="R3" id="R3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" value="R3" id="R3">
                                 <label for="R3" class="form-check-label">靠近時會攻擊</label>
                             </div>
     
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" value="R4" id="R4">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" value="R4" id="R4">
                                 <label for="R4" class="form-check-label">看見人就跑</label>
                             </div>
                         </div>
@@ -140,10 +140,12 @@
                 </form>
     
                 <script>
-                    function thanks(event) {
+                    function thanks(event) 
+                    {
                         event.preventDefault();
                         var user = document.getElementById("userName").value;
                         alert(user + "，感謝您提供的資料，我們將盡速處理");
+                        location.reload();
                     }
                 </script>
             </div>
