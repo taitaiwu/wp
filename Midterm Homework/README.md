@@ -12,13 +12,15 @@
 * [投稿專區](https://taitaiwu.github.io/wp/Midterm%20Homework/%E6%8A%95%E7%A8%BF%E5%B0%88%E5%8D%80.html)
 
 
-2. 網頁使用html、CSS及bootstrap套件獨立完成
+2. 網頁使用html、CSS及bootstrap套件獨立完成。
 
 3. 參考書中範例並自行做出導覽列、輪播效果、手風琴效果、表單等，
 
 4. 圖片來源為自行拍攝或同學提供，除了兩隻橘貓的其中一張照片是來源Dcard。
 
 5. 一些小地方有使用Chatgpt-4o進行debug。
+
+6. 此網站有作響硬是網頁設計，就算用手機也不會跑版。
 
 ---
 
