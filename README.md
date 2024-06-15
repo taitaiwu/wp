@@ -24,7 +24,7 @@
 
 ---
 
-## 關於期末作業 - [作業連結](https://taitaiwu.github.io/wp/)
+## 關於期末作業 - [作業連結](https://taitaiwu.github.io/wp/index.html)
 
 作業2、3、5、6、7、9為原創；作業4部分原創  
 
