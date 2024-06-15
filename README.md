@@ -26,7 +26,7 @@
 
 ## 關於期末作業 - [作業連結](https://taitaiwu.github.io/wp)
 
-作業2、3、5、6、7、9為原創；作業4部分原創  
+全部作業都有完成，作業2、3、5、6、7、9為原創；作業4、11部分原創  
 
 **作業詳情**
 1. [作業1](https://github.com/taitaiwu/wp/tree/master/homework1) : 修改Bing Copilot之自我介紹網頁模板
@@ -39,3 +39,4 @@
 8. [作業8](https://github.com/taitaiwu/wp/tree/master/Homework8)  : 修改W3School之layout教材程式碼，圖片為Bing Copilot生成
 9. [作業9](https://github.com/taitaiwu/wp/tree/master/Homework9)  : 原創
 10. [作業10](https://github.com/taitaiwu/wp/tree/master/Homework10)  : 修改老師程式碼
+11. [作業11](https://github.com/taitaiwu/wp/tree/master/Homework11) : 部分原創，部分使用ChatGPT-4o
