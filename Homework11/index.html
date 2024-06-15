@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        <meta charset="utf-8">
+        <title>作業11 - denoApiService + Blog的註解</title>
+    </head>
+
+    <style>
+        main {width: 75%;}
+        nav 
+        {
+            width: 25%;
+            float: right;
+        }
+
+        #sidebar
+        {
+            right: 0%;
+            position: absolute;
+            width: 5%;
+            font-size: 5px;
+            background-color: rgb(229, 227, 195);
+            transition: width 3s, font-size 3s, transform 3s;  
+            transform: translateX(0);
+        }
+
+        #sidebar:hover 
+        {
+            width: 35%;
+            font-size: 25px;
+            transform: translateX(-20%);
+        }
+    </style>
+
+    <body style="background-color: rgba(243, 247, 240, 0.748);">
+        <header>
+            <div class="container">
+                <h1 class="mt-5" style="text-align: center;">作業十一 - denoApiService + Blog的註解</h1>
+                <p class="lead mb-5" style="text-align: center;">國立金門大學 資工一 111210520 吳佳泰</p>
+                <hr>
+            </div>
+        </header>
+
+        <div class="container">
+            <nav>
+                <div id="sidebar" class="container">
+                    <p style="text-align: center;">目錄</p><hr>
+                    <a href="https://taitaiwu.github.io/wp/homework1/index.html">作業1 - 自我介紹</a><br>
+                    <a href="https://taitaiwu.github.io/wp/homework2/index.html">作業2 - 註冊頁面</a><br>
+                    <a href="https://taitaiwu.github.io/wp/Homework3/index.html">作業3 - Javascript練習一</a><br>
+                    <a href="https://taitaiwu.github.io/wp/Homework4/index.html">作業4 - Javascript練習二</a><br>
+                    <a href="https://taitaiwu.github.io/wp/Homework5/index.html">作業5 - DOM的JavaScript操控練習</a><br>
+                    <a href="https://taitaiwu.github.io/wp/Homework6/index.html">作業6 - 側欄</a><br>
+                    <a href="https://taitaiwu.github.io/wp/Homework7/index.html">作業7 - SHA256湊數</a><br>
+                    <a href="https://taitaiwu.github.io/wp/Homework8/index.html">作業8 - Layout佈局</a><br>
+                    <a href="https://taitaiwu.github.io/wp/Homework9/index.html">作業9 - 繪圖網頁</a><br>
+                    <a href="https://taitaiwu.github.io/wp/Homework10/index.html">作業10 - Groq大語言模型</a><br>
+                    <a href="https://taitaiwu.github.io/wp/Homework11/index.html">作業11 - denoApiService + Blog的註解</a><br>
+                </div>
+            </nav>
+       
+            <main>
+                <div class="container">
+                    <h2 class="mt-5">※關於作業</h2>
+                    <ul>
+                        <li>我再努力一下下</li>
+                    </ul>
+                </div>
+
+                <br>
+                <div class="container">
+                    <a href="https://github.com/taitaiwu/wp/tree/master/Homework11" class="btn btn-outline-primary btn-lg" type="button" style="margin-left: 15px; margin-right: 15px;">作業程式碼</a>
+                    <a href="https://github.com/ccc112b/wp/issues/21" class="btn btn-outline-info btn-lg" type="button">原始題目</a>
+                    <a href="https://taitaiwu.github.io/wp/" class="btn btn-warning btn-lg" type="button" style="margin-left: 15px;">回首頁</a>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
