@@ -8,6 +8,33 @@
         <title>作業1 - 自我介紹</title>
     </head>
 
+    <style>
+        main {width: 75%;}
+        nav 
+        {
+            width: 25%;
+            float: right;
+        }
+
+        #sidebar
+        {
+            right: 0%;
+            position: absolute;
+            width: 5%;
+            font-size: 5px;
+            background-color: rgb(229, 227, 195);
+            transition: width 3s, font-size 3s, transform 3s;  
+            transform: translateX(0);
+        }
+
+        #sidebar:hover 
+        {
+            width: 35%;
+            font-size: 25px;
+            transform: translateX(-20%);
+        }
+    </style>
+
     <body style="background-color: rgba(243, 247, 240, 0.748);">
         <header>
             <div class="container">
@@ -16,29 +43,48 @@
                 <hr>
             </div>
         </header>
-       
-        <main>
-            <div class="container">
-                <h2 class="mt-5">※關於作業</h2>
-                <ul>
-                    <li>此作業包括一個名為<b>自我介紹</b>之網頁</li>
-                    <li>使用 Bing Copilot 生成html模板再修改內容</li>
-                </ul>
-            </div>
 
-            <div class="container">
-                <h2 class="mt-5">※參考資料及教材</h2>
-                <ul>
-                    <li>Bing Copilot</li>
-                </ul>
-            </div>
-            <br>
-            <div class="container">
-                <a href="https://taitaiwu.github.io/wp/homework1/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9.html" class="btn btn-outline-success btn-lg" type="button">作業網頁</a>
-                <a href="https://github.com/taitaiwu/wp/blob/master/homework1/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9.html" class="btn btn-outline-primary btn-lg" type="button" style="margin-left: 15px; margin-right: 15px;">作業程式碼</a>
-                <a href="https://github.com/ccc112b/wp/issues/2" class="btn btn-outline-info btn-lg" type="button">原始題目</a>
-                <a href="https://taitaiwu.github.io/wp/" class="btn btn-warning btn-lg" type="button" style="margin-left: 20px;">回首頁</a>
-            </div>
-        </main>
+        <div class="container">
+            <nav>
+                <div id="sidebar" class="container">
+                    <p style="text-align: center;">目錄</p><hr>
+                    <a href="https://taitaiwu.github.io/wp/homework1/index.html">作業1 - 自我介紹</a><br>
+                    <a href="https://taitaiwu.github.io/wp/homework2/index.html">作業2 - 註冊頁面</a><br>
+                    <a href="https://taitaiwu.github.io/wp/Homework3/index.html">作業3 - Javascript練習一</a><br>
+                    <a href="https://taitaiwu.github.io/wp/Homework4/index.html">作業4 - Javascript練習二</a><br>
+                    <a href="https://taitaiwu.github.io/wp/Homework5/index.html">作業5 - DOM的JavaScript操控練習</a><br>
+                    <a href="https://taitaiwu.github.io/wp/Homework6/index.html">作業6 - 側欄</a><br>
+                    <a href="https://taitaiwu.github.io/wp/Homework7/index.html">作業7 - SHA256湊數</a><br>
+                    <a href="https://taitaiwu.github.io/wp/Homework8/index.html">作業8 - Layout佈局</a><br>
+                    <a href="https://taitaiwu.github.io/wp/Homework9/index.html">作業9 - 繪圖網頁</a><br>
+                    <a href="https://taitaiwu.github.io/wp/Homework10/index.html">作業10 - Groq大語言模型</a><br>
+                    <a href="https://taitaiwu.github.io/wp/Homework11/index.html">作業11 - denoApiService + Blog的註解</a><br>
+                </div>
+            </nav>
+       
+            <main>
+                <div class="container">
+                    <h2 class="mt-5">※關於作業</h2>
+                    <ul>
+                        <li>此作業包括一個名為<b>自我介紹</b>之網頁</li>
+                        <li>使用 Bing Copilot 生成html模板再修改內容</li>
+                    </ul>
+                </div>
+
+                <div class="container">
+                    <h2 class="mt-5">※參考資料及教材</h2>
+                    <ul>
+                        <li>Bing Copilot</li>
+                    </ul>
+                </div>
+                <br>
+                <div class="container">
+                    <a href="https://taitaiwu.github.io/wp/homework1/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9.html" class="btn btn-outline-success btn-lg" type="button">作業網頁</a>
+                    <a href="https://github.com/taitaiwu/wp/blob/master/homework1/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9.html" class="btn btn-outline-primary btn-lg" type="button" style="margin-left: 15px; margin-right: 15px;">作業程式碼</a>
+                    <a href="https://github.com/ccc112b/wp/issues/2" class="btn btn-outline-info btn-lg" type="button">原始題目</a>
+                    <a href="https://taitaiwu.github.io/wp/" class="btn btn-warning btn-lg" type="button" style="margin-left: 15px;">回首頁</a>
+                </div>
+            </main>
+        </div>
     </body>
 </html>
