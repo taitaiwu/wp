@@ -1,20 +1,27 @@
-import {sqlFetch} from '../lib/sql.js'
+import {sqlFetch} from '../lib/sql.js'  //從sql.j檔案加入函式
 
-export var R = {}
-let _id=0, _title=1, _body=2
+export var R = {}  //設定一個空的R串列
 
-window.onhashchange = async function () {
+let _id=0, _title=1, _body=2  //設定變數的屬性
+
+window.onhashchange = async function () 
+{
   var r
+
   var tokens = window.location.hash.split('/')
   console.log('tokens=', tokens)
-  switch (tokens[0]) {
+
+  switch (tokens[0]) 
+  {
     case '#show':
       let r = await sqlFetch('blog', `SELECT id, title, body FROM posts WHERE id=${tokens[1]}`)
       R.show(r[0]) // 取得第一筆傳入 (雖然只會有一筆，但 SELECT 預設會傳回很多比，所以用 results[0] 只取第一筆)
       break
+
     case '#new':
       R.new()
       break
+
     default:
       let posts = await sqlFetch('blog', `SELECT id, title, body FROM posts`)
       R.list(posts)
@@ -22,33 +29,41 @@ window.onhashchange = async function () {
   }
 }
 
-window.onload = async function () {
+window.onload = async function () 
+{
   await sqlFetch('blog', `CREATE TABLE IF NOT EXISTS posts (id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, body TEXT)`)
   window.onhashchange()
 }
 
-R.layout = function (title, content) {
+R.layout = function (title, content) 
+{
   document.querySelector('title').innerText = title
   document.querySelector('#content').innerHTML = content
 }
 
-R.list = function (posts) {
+R.list = function (posts) 
+{
   let list = []
-  for (let post of posts) {
-    list.push(`
-    <li>
-      <h2>${post[_title]}</h2>
-      <p><a id="show${post[_id]}" href="#show/${post[_id]}">Read post</a></p>
-    </li>
+
+  for (let post of posts) 
+    {
+    list.push
+    (`
+      <li>
+        <h2>${post[_title]}</h2>
+        <p><a id="show${post[_id]}" href="#show/${post[_id]}">Read post</a></p>
+      </li>
     `)
   }
-  let content = `
-  <h1>Posts</h1>
-  <p>You have <strong>${posts.length}</strong> posts!</p>
-  <p><a id="createPost" href="#new">Create a Post</a></p>
-  <ul id="posts">
-    ${list.join('\n')}
-  </ul>
+
+  let content = 
+  `
+    <h1>Posts</h1>
+    <p>You have <strong>${posts.length}</strong> posts!</p>
+    <p><a id="createPost" href="#new">Create a Post</a></p>
+    <ul id="posts">
+      ${list.join('\n')}
+    </ul>
   `
   return R.layout('Posts', content)
 }
