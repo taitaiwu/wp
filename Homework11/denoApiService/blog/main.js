@@ -35,62 +35,85 @@ window.onload = async function ()
   window.onhashchange()
 }
 
-R.layout = function (title, content)  //把標題和留言放進函式
+R.layout = function (title, content)  ////定義新函式R.layout
 {
   document.querySelector('title').innerText = title  //加入標題
   document.querySelector('#content').innerHTML = content  //加入留言
 }
 
-R.list = function (posts)   //把貼文放入函式
+R.list = function (posts)   //定義新函式R.list
 {
   let list = []  //設定一個空的list串列
 
   for (let post of posts)  //一個經歷posts的迴圈
   {
-    list.push
-    (`
-      <li>
-        <h2>${post[_title]}</h2>
-        <p><a id="show${post[_id]}" href="#show/${post[_id]}">Read post</a></p>
-      </li>
-    `)
+    list.push  //在list串列加入post的title以及Read Post的超連結
+    (
+      `
+        <li> 
+          <h2>${post[_title]}</h2> 
+          <p><a id="show${post[_id]}" href="#show/${post[_id]}">Read post</a></p>
+        </li>
+      ` //在list串列加入post的title以及Read Post的超連結
+    )  
   }
 
-  let content = 
+  let content =  
   `
     <h1>Posts</h1>
     <p>You have <strong>${posts.length}</strong> posts!</p>
     <p><a id="createPost" href="#new">Create a Post</a></p>
     <ul id="posts">
-      ${list.join('\n')}
+      ${list.join('\n')}  
     </ul>
-  `
-  return R.layout('Posts', content)
+  `  
+  //先顯示標題"Posts"
+  //再顯示你有幾筆貼文 (You have ? posts!)
+  //有一個Create a Post的超連結
+  //在每篇貼文之間加入換行符號
+
+  return R.layout('Posts', content)  //再頁面加入標題和評論(回傳到R.layout函式)
 }
 
-R.new = function () {
-  R.layout('New Post', `
-  <h1>New Post</h1>
-  <p>Create a new post.</p>
-  <form>
-    <p><input id="title" type="text" placeholder="Title" name="title"></p>
-    <p><textarea id="body" placeholder="Contents" name="body"></textarea></p>
-    <p><input id="savePost" type="button" value="Create"></p>
-  </form>
-  `)
-  document.querySelector('#savePost').onclick = ()=>R.savePost()
+R.new = function ()  //定義新函式R.new
+{
+  R.layout
+  (
+    'New Post',
+    `
+      <h1>New Post</h1>
+      <p>Create a new post.</p>
+      <form>
+        <p><input id="title" type="text" placeholder="Title" name="title"></p>
+        <p><textarea id="body" placeholder="Contents" name="body"></textarea></p>
+        <p><input id="savePost" type="button" value="Create"></p>
+      </form>
+    `
+    //顯示標題"New Post"
+    //一段說明文字"Create a new post."
+    //一個表單讓使用者輸入標題、內容和一個提交按鈕
+  )
+
+  document.querySelector('#savePost').onclick = ()=>R.savePost()  //按下savePost時，會觸發R.savePost()函式來儲存貼文
 }
 
-R.show = function (post) {
-  return R.layout(post[_title], `
-    <h1>${post[_title]}</h1>
-    <p>${post[_body]}</p>
-  `)
+R.show = function (post) 
+{
+  return R.layout
+  (
+    post[_title], 
+    `
+      <h1>${post[_title]}</h1> 
+      <p>${post[_body]}</p>
+    `
+    //顯示標題和內容
+  )
 }
 
-R.savePost = async function () {
-  let title = document.querySelector('#title').value
-  let body = document.querySelector('#body').value
-  await sqlFetch('blog', `INSERT INTO posts (title, body) VALUES ('${title}', '${body}')`)
+R.savePost = async function () 
+{
+  let title = document.querySelector('#title').value  //title = html裡的title內容
+  let body = document.querySelector('#body').value  //body = html裡的body內容
+  await sqlFetch('blog', `INSERT INTO posts (title, body) VALUES ('${title}', '${body}')`)  //使用sqlFetch函式
   window.location.hash = '#list'
 }

@@ -12,6 +12,7 @@
 ---
 * [sql.js](/wp/Homework11/denoApiService/lib/sql.js)
 * [main.js](/wp/Homework11/denoApiService/blog/main.js)
+* [index.html](/wp/Homework11/denoApiService/blog/index.html)
 
 2. 有整理過縮排以及用空行區分段落
 3. 基本上自行理解，不理解的部分詢問Chatgpt-4o
