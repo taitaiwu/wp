@@ -12,7 +12,8 @@
 ---
 * [sql.js](/wp/Homework11/denoApiService/lib/sql.js)
 * [main.js](/wp/Homework11/denoApiService/blog/main.js)
-* [index.html](wp/Homework11/denoApiService/blog/index.html)
+* [index.html](wp/Homework11/denoAp)
+
 ---
 
 2. 有整理過縮排以及用空行區分段落
